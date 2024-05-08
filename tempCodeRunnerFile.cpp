@@ -1,21 +1,17 @@
 #include <iostream>
-
 using namespace std;
+
 int main(){
-int n=0, m=1 ;
+int n, modulo=0;
 
-cout<< "Ingrese un numero para conocer las tablas:";
-cin>> n;
+cout<<"Ingrese un numero entero";
+cin>>n;
 
-while(n>m){
-cout<< n << "\n";
-n=n+1;
-
-
-
+for(int i=n-1; i>=2; i=i-1)
+{
+modulo= n%1;
+cout<<i<<"\n";
 }
-
-
 
     return 0;
 }
